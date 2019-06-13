@@ -1,0 +1,21 @@
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+        
+          host : 'northside.in',
+          user : 'shakir',
+          password : 'shakir123',
+          database : 'shakir_test'
+        });
+      connection.connect((err)=>
+      {
+          if(err)
+          {
+            console.log(' Error');
+            return;
+          }
+          console.log('connected')
+      });
+      
+  
+module.exports=connection;
+
