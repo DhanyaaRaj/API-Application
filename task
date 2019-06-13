@@ -1,0 +1,27 @@
+var db = require('./db')
+var tasks =
+{
+    getalltask :function(callback)
+    {
+      return db.query("Select * from customer",callback)
+    },
+    gettaskbyId : function(id,callback)
+    {
+      return db.query("Select * from customer where id= ?",id,callback)
+    },
+    posttask : function([id,name,city,product],callback)
+    {
+        return db.query("insert into customer values (?,?,?,?)",[id,name,city,product],callback)
+    },
+    deletetask : function([id],callback)
+    {
+        return db.query("delete from customer where id = ?",[id],callback)
+    },
+    updatetask : function([name,product,id],callback)
+    {
+        return db.query("update customer set name = ?, product = ? where id = ?",[name,product,id],callback)
+    }
+    };
+    module.exports=tasks;
+
+
