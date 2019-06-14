@@ -1,0 +1,20 @@
+<html>
+    <title>Login Page</title>
+    <head>
+    
+    </head>
+    <body>
+        <form > 
+            id:<br>
+            <input type="text" name="uname" required><br>
+            name:<br>
+            <input type="text" name="name" required><br>
+            city:<br>
+            <input type="text" name="city" required><br>
+            product:<br>
+            <input type="text" name="product" required><br>
+
+            <button  id = "clickid" class="clickclass">Login</button>
+        </form>
+    </body>
+</html>
