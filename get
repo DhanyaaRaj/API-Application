@@ -1,0 +1,14 @@
+<html>
+    <title>Login Page</title>
+    <head>
+    
+    </head>
+    <body>
+        <form > 
+            ID:<br>
+            <input type="text" name="id" required><br>
+           
+            <button onclick="location.href = 'www.google.com'"; id = "clickid" class="clickclass">Login</button>
+        </form>
+    </body>
+</html>
